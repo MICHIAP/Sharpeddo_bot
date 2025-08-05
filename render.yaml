@@ -1,0 +1,20 @@
+services:
+	-type: web
+	 name: Sharpeddo_bot
+	 env: python
+	 plan: free
+	 buildCommand: "pip install -r requirements.txt"
+	 startCommand: "python sharpeddo.py"
+	 envVars:
+		-key: TELEGRAM_TOKEN
+		 sync: false
+		-key: AUDD_API_KEY
+		 sync: false
+		-key: ACR_HOST
+		 sync: false
+		-key: ACR_ACCESS_KEY
+		 sync: false
+		-key: ACR_ACCESS_SECRET
+		 sync: false
+		-key: SHAZAM_KEY
+		 sync: false
